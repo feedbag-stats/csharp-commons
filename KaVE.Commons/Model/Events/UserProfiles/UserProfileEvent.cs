@@ -49,6 +49,22 @@ namespace KaVE.Commons.Model.Events.UserProfiles
 
         [NotNull]
         string Comment { get; }
+
+        // dashboard privacy settings
+        bool SharingDataEnabled { get; }
+
+        bool SharingGenericInteractionDataForFeedBagOnlyEnabled { get; }
+        bool SharingGenericInteractionDataForResearchEnabled { get; }
+        bool SharingGenericInteractionDataForOpenDataSetEnabled { get; }
+
+        bool SharingProjectSpecificDataForFeedBagOnlyEnabled { get; }
+        bool SharingProjectSpecificDataForResearchEnabled { get; }
+        bool SharingProjectSpecificDataForOpenDataSetEnabled { get; }
+
+        bool SharingSourceCodeForFeedBagOnlyEnabled { get; }
+        bool SharingSourceCodeForResearchEnabled { get; }
+        bool SharingSourceCodeForOpenDataSetEnabled { get; }
+
     }
 
     [DataContract]
@@ -101,6 +117,26 @@ namespace KaVE.Commons.Model.Events.UserProfiles
 
         [DataMember]
         public string Comment { get; set; }
+
+        public bool SharingDataEnabled { get; set; }
+
+        public bool SharingGenericInteractionDataForFeedBagOnlyEnabled { get; set; }
+
+        public bool SharingGenericInteractionDataForResearchEnabled { get; set; }
+
+        public bool SharingGenericInteractionDataForOpenDataSetEnabled { get; set; }
+
+        public bool SharingProjectSpecificDataForFeedBagOnlyEnabled { get; set; }
+
+        public bool SharingProjectSpecificDataForResearchEnabled { get; set; }
+
+        public bool SharingProjectSpecificDataForOpenDataSetEnabled { get; set; }
+
+        public bool SharingSourceCodeForFeedBagOnlyEnabled { get; set; }
+
+        public bool SharingSourceCodeForResearchEnabled { get; set; }
+
+        public bool SharingSourceCodeForOpenDataSetEnabled { get; set; }
 
         public UserProfileEvent()
         {
